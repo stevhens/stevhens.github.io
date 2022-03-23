@@ -1,0 +1,115 @@
+/* Typograph */
+
+@font-face {
+	font-family: 'MyWebFont';
+	src: url('fonts/LeagueSpartan-Bold.eot'); /* IE9 Compat Modes */
+	src: url('fonts/LeagueSpartan-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('fonts/LeagueSpartan-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('fonts/LeagueSpartan-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('fonts/LeagueSpartan-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('fonts/LeagueSpartan-Bold.svg#LeagueSpartan-Bold') format('svg'); /* Legacy iOS */ 
+}
+
+html {
+	font-family: 'MyWebFont', sans-serif;
+	overflow: hidden;
+}
+
+@media (min-width: 576px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 992px) {
+	html {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1200px) {
+	html {
+		font-size: 20px;
+	}
+}
+
+.icons-social i {
+	font-size: 3em;
+}
+
+
+/* Main Styles */
+
+main {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: center;
+	padding: 0 30px;
+	text-align: center;
+}
+
+main > .intro {
+	font-family: 'MyWebFont', sans-serif;
+	font-size: 3.75em;
+	font-weight: 600;
+}
+
+main > .tagline {
+	font-size: 1.5rem;
+	margin: 1.5rem 0;
+	font-weight: 100;
+}
+
+.wave{
+	pointer-events: none;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	height: 100%;
+	width: 200%;
+	background-position: 0 bottom;
+	background-repeat: repeat-x;
+	transform-origin: center bottom;
+	background-image: url("../images/waves.png");
+	background-size: 50% 75px;
+}
+
+@keyframes waves{
+	0% {transform: translateX(0) translateZ(0) scaleY(1);}
+	0% {transform: translateX(-25%) translateZ(0) scaleY(.5);}
+	0% {transform: translateX(-50%) translateZ(0) scaleY(1);}
+}
+
+.icons-social i {
+	padding: 10px;
+}
+
+.wave-bar{
+	height: 50px;
+}
+
+.devto {
+	margin-bottom: -0.20rem;
+}
+
+img {
+	padding: 10px;
+	width: 56px;
+	height: 56px;
+}
+
+.devto svg {
+	margin-bottom: -0.20rem;
+	margin-left: 0.675rem;
+	width: 2.65rem;
+	height: 2.65rem;
+}
